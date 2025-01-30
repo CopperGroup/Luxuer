@@ -66,7 +66,7 @@ export default function LuxuryAboutUsSection() {
               Crafting Elegance Since 1990
             </h2>
             <p className="text-body-normal text-gray-600 leading-relaxed">
-              For over three decades, we've been dedicated to creating exquisite jewelry that captures the essence of
+              For over three decades, we&apos;ve been dedicated to creating exquisite jewelry that captures the essence of
               beauty and sophistication. Our passion for craftsmanship and attention to detail has made us a trusted
               name in the world of luxury accessories.
             </p>
@@ -108,8 +108,8 @@ export default function LuxuryAboutUsSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <blockquote className="italic text-body1-bold text-[#E5D3B3] text-center">
-            "Their attention to detail and commitment to quality is unmatched. Every piece I've purchased has become a
-            cherished part of my collection."
+          &quot;Their attention to detail and commitment to quality is unmatched. Every piece I&apos;ve purchased has become a
+            cherished part of my collection.&quot;
           </blockquote>
           <p className="mt-4 text-center text-base-regular text-white">- Sarah J., Loyal Customer</p>
         </motion.div>
