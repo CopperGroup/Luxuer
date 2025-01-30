@@ -55,7 +55,7 @@ export default async function RootLayout({
               <AppWrapper>
                 <PageView />
                 <main className = "main-container">
-                  <div className = "w-full max-w-[1680px] px-5">
+                  <div className = "w-full max-w-[1680px] px-5 max-[425px]:px-0">
                     {children}
                  </div>
                 </main>

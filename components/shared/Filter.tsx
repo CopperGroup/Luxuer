@@ -231,7 +231,7 @@ const Filter = ({ maxPrice, minPrice, maxMin, checkParams, category, counts }: P
       <Button
         ref={filterButtonRef}
         onClick={(e) => toggleOverflow(e)}
-        className="fixed duration-300 left-0 top-36 rounded-r-xl md:hidden transition-all bg-[#1C1C1C] text-[#E5D3B3] hover:bg-[#E5D3B3] hover:text-[#1C1C1C]"
+        className="fixed duration-300 left-0 top-36  rounded-none md:hidden transition-all bg-[#1C1C1C] text-[#E5D3B3] hover:bg-[#E5D3B3] hover:text-[#1C1C1C]"
       >
         <i className="fa fa-filter pointer-events-none"></i>
       </Button>

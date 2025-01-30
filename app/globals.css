@@ -7,7 +7,7 @@
 @layer components {
   /* main */
   .main-container {
-    @apply flex min-h-screen flex-1 flex-col items-center bg-white  pb-10 pt-28 max-md:pb-32 overflow-x-hidden;
+    @apply flex min-h-screen flex-1 flex-col items-center bg-white pb-10 pt-28 max-[425px]:pt-10 max-md:pb-32 overflow-x-hidden;
   }
 
   .admin-container {
