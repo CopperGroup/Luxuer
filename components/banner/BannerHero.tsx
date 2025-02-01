@@ -4,6 +4,7 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { Store } from "@/constants/store"
 
 export default function BannerHero() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -37,7 +38,7 @@ export default function BannerHero() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h2 className="text-[#E5D3B3] font-serif italic text-heading4-medium tracking-wider">Luxuer</h2>
+          <h2 className="text-[#E5D3B3] font-serif italic text-heading4-medium tracking-wider">{Store.name}</h2>
           <h1 className="text-white font-serif text-heading2-bold sm:text-heading1-semibold tracking-wide leading-tight">
             E-Commerce Store
           </h1>

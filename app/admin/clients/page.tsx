@@ -1,6 +1,7 @@
 import { fetchUsers } from "@/lib/actions/user.actions";
 import { DataTable } from "./data-table";
 import { columns } from "./columns";
+import { AddClientButton } from "@/components/admin-components/clients/AddClientButton";
 
 const Page = async () => {
 
@@ -9,6 +10,7 @@ const Page = async () => {
         <section className="w-full px-10 py-20 h-screen max-md:pb-36 max-[360px]:px-4"> 
             <h1 className="w-full text-heading1-bold drop-shadow-text-blue">Клієнти</h1>
             <DataTable columns={columns} data={users}/>
+            <AddClientButton />
         </section>
     )
 }

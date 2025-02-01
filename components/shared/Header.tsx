@@ -12,6 +12,7 @@ import Auth from "./Auth"
 import AdminLink from "./AdminLink"
 import { IoDiamond } from "react-icons/io5"
 import BurgerMenu from "./BurgerMenu"
+import { Store } from "@/constants/store"
 
 const infoNames = ["Контакти", "Доставка та оплата", "Гаратнія та сервіси", "Презентації"]
 
@@ -53,7 +54,7 @@ export default function LuxuryHeader({ email, user }: { email: string; user: str
       <div className="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
           <IoDiamond />
-          <span className="text-[#E5D3B3] font-serif italic text-heading4-medium tracking-wider">Luxuer</span>
+          <span className="text-[#E5D3B3] font-serif italic text-heading4-medium tracking-wider">{Store.name}</span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">

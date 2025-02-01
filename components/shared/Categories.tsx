@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { Store } from "@/constants/store"
 
 const categories = [
   { name: "Neckless", image: "/assets/1.jpg", href: "/catalog" },
@@ -20,9 +21,6 @@ export default function LuxuryCategories() {
     <motion.section
       ref={sectionRef}
       className="w-full min-h-screen relative flex flex-col items-center justify-center overflow-hidden py-24 bg-[#1C1C1C]"
-      initial={{ opacity: 0 }}
-      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 0.8 }}
     >
       {/* Spinning dashed circles */}
       <div className="absolute inset-0 overflow-hidden">
@@ -45,7 +43,7 @@ export default function LuxuryCategories() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h2 className="text-[#E5D3B3] font-serif italic text-heading4-medium tracking-wider">Luxuer</h2>
+          <h2 className="text-[#E5D3B3] font-serif italic text-heading4-medium tracking-wider">{Store.name}</h2>
           <h1 className="text-white font-serif text-heading1-semibold tracking-wide leading-tight">
             Product Categories
           </h1>
